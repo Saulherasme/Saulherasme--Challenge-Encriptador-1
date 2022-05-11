@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="esp">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<title>Encriptador de Texto</title>
+</head>
+<body>
+	
+
+	<main class="principal">
+		<header>
+			<h1><a href="index.html"> <img class="logo" src="imagenes/logo.png" alt="logo"></a> </h1>	
+		</header>
+		
+		<section>
+
+			<textarea type="text" class="input-text" cols="40" rows="10" placeholder="Ingrese texto"></textarea>
+			<p id="mensaje">&#33 Solo letras minusculas y sin acentos</p>
+
+			<div>
+				<button type="button" id="btnencriptar" onclick="btnEncritar()">Encriptar</button>
+				<button type="button" id="btndesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+			</div>
+
+		</section>
+
+		<section id="salida">
+			<button id="botoncopiar" onclick="copiartext()">Copiar</button>
+			<p id="mensaje1">Ningún mensaje fue encontrado </p>
+			<p id="mensaje2">Ingrese el texto que deseas  encriptar o desencriptar </p>
+			<h2><img  id="munheco" src="imagenes/muñeco.png" alt="muneco"></h2>
+			<textarea type="text" class="textosalida" cols="18" rows="8" > </textarea>
+
+		</section>
+	</main>
+</body>
+<script src="script.js"> </script>
+</html>
